@@ -5,7 +5,7 @@ echo updating...
 call git pull origin --verbose
 echo up to date...
 timeout 2 >nul
-start cmd 
+start cmd /k "launch.bat"
 ) else (
 echo incorrect path
 pause >nul
