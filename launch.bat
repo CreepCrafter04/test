@@ -14,11 +14,5 @@ echo:
 echo:
 echo Node Version:
 node --version
-echo:
-echo NPM:
-npm version
-echo:
-echo:
-echo launching...
 
 exit
