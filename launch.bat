@@ -9,7 +9,7 @@ echo OS: %OS%
 echo CMD V: %CMDEXTVERSION%
 echo Date, Time: %DATE%, %TIME%
 echo Dir: %cd%
-timeout 2 >null
+timeout 1 >null
 echo:
 echo:
 echo Node Version:
@@ -21,5 +21,5 @@ echo:
 echo:
 timeout 1 >null
 echo launching...
-start cmd /k "node test.js && exit"
+start cmd /k "node test.js && echo execution ended, click to exit... && pause >null && exit"
 exit
