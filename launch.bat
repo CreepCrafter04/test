@@ -10,7 +10,7 @@ echo CMD V: %CMDEXTVERSION%
 echo Date, Time: %DATE%, %TIME%
 echo Dir: %cd%
 
-timeout 1 >null
+timeout 3 >null
 del null
 
 echo:
@@ -23,7 +23,7 @@ call npm version
 echo:
 echo:
 
-timeout 1 >null
+timeout 2 >null
 del null
 
 echo launching...
