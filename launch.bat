@@ -17,9 +17,8 @@ node --version
 echo:
 echo NPM:
 npm version
-timeout 2 >null
 echo:
 echo:
 echo launching...
-start cmd /k "node test.js"
+
 exit
