@@ -21,5 +21,5 @@ echo:
 echo:
 
 echo launching...
-start cmd /k "node test.js && echo [press any key to exit] && pause >null && exit"
+start cmd /k "node test.js && echo [press any key to exit] && pause >null"
 exit
