@@ -14,5 +14,5 @@ echo:
 echo:
 echo Node Version:
 node --version
-
+npm version
 exit
