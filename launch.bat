@@ -14,9 +14,12 @@ echo:
 echo:
 echo Node Version:
 node --version
-timeout 1 >null
 echo:
-echo launching...
+echo NPM:
 call npm version
-start cmd /k "node test.js" exit
+echo:
+echo:
+timeout 1 >null
+echo launching...
+start cmd /k "call node test.js" exit
 exit
