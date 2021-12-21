@@ -10,6 +10,9 @@ echo CMD V: %CMDEXTVERSION%
 echo Date, Time: %DATE%, %TIME%
 echo Dir: %cd%
 
+timeout 1 >null
+del null
+
 echo:
 echo:
 echo Node Version:
@@ -20,6 +23,9 @@ call npm version
 echo:
 echo:
 
+timeout 1 >null
+del null
+
 echo launching...
-start cmd /k "node test.js && echo [press any key to exit] && pause >null"
+start cmd /k "node test.js && echo [press any key to exit] && pause >null && del null & exit"
 exit
