@@ -9,7 +9,7 @@ echo OS: %OS%
 echo CMD V: %CMDEXTVERSION%
 echo Date, Time: %DATE%, %TIME%
 echo Dir: %cd%
-
+timeout 1>null
 echo:
 echo:
 echo Node Version:
