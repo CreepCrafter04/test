@@ -1,16 +1,25 @@
 @echo off
-echo %NUMBER_OF_PROCESSORS%
-echo %PROCESSOR_ARCHITECTURE%
-echo %PROCESSOR_LEVEL%
-echo %PROCESSOR_REVISION%
+echo Processors: %NUMBER_OF_PROCESSORS%
+echo Architecture: %PROCESSOR_ARCHITECTURE%
+echo Level: %PROCESSOR_LEVEL%
+echo Revision: %PROCESSOR_REVISION%
 echo %COMPUTERNAME%
 echo %USERNAME%
-echo %OS%
-echo %CMDCMDLINE%
-echo %CMDEXTVERSION%
-echo %DATE%
-echo %TIME%
-echo %cd%
+echo OS: %OS%
+echo CMD V: %CMDEXTVERSION%
+echo Date, Time: %DATE%, %TIME%
+echo Dir: %cd%
+timeout 2 >null
 echo:
 echo:
-node version
+echo Node Version:
+node --version
+echo:
+echo NPM:
+npm version
+timeout 2 >null
+echo:
+echo:
+echo launching...
+start cmd /k "node test.js"
+exit
