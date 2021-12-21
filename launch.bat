@@ -21,5 +21,5 @@ echo:
 echo:
 timeout 1 >null
 echo launching...
-start cmd /k "node test.js && [press any key to exit] && pause >null && exit"
+start cmd /k "node test.js && echo [press any key to exit] && pause >null && exit"
 exit
